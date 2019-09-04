@@ -120,6 +120,11 @@ REQUISITOS:
 -	Puedes implementar cualquiera de los 3 niveles, no es necesario implementar los 3.
 -	Hay bonus si usas SWAGGER.
 -	Junto con la solución debes entregar un archivo con la entrada y con la salida en formato JSON.
+- Por ultimo en el detalle del commit debes indicar los siguientes datos
+   - Nombre Completo.
+   - Correo Electrónico.
+   - Vía por la que te entérate del desafío. Estas pueden ser: Empresa de outsourcing (indicar cuál), twitter, LinkedIn, etc.
+
 
 NOTA:
 Todos los poll reuqests serán rechazados, esto no quiere decir que ha sido rechazada la solución, sino que es una forma de que otros postulantes no copien tu código.
