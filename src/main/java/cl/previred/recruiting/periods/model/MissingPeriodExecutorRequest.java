@@ -1,19 +1,19 @@
 package cl.previred.recruiting.periods.model;
 
-import cl.previred.recruiting.periods.core.workflow.ExecutorParam;
+import cl.previred.recruiting.periods.core.model.ExecutorRequest;
 
 import java.time.LocalDate;
 
-public class MissingPeriodParam implements ExecutorParam {
+public class MissingPeriodExecutorRequest implements ExecutorRequest {
 
     private LocalDate from;
     private LocalDate to;
 
-    public MissingPeriodParam() {
+    public MissingPeriodExecutorRequest() {
         super();
     }
 
-    public MissingPeriodParam(LocalDate from, LocalDate to) {
+    public MissingPeriodExecutorRequest(LocalDate from, LocalDate to) {
         this.from = from;
         this.to = to;
     }
@@ -32,5 +32,13 @@ public class MissingPeriodParam implements ExecutorParam {
 
     public void setTo(LocalDate to) {
         this.to = to;
+    }
+
+    @Override
+    public String toString() {
+        return "MissingPeriodExecutorRequest{" +
+                "from=" + from +
+                ", to=" + to +
+                '}';
     }
 }

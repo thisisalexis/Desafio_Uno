@@ -1,10 +1,9 @@
 package cl.previred.recruiting.periods.core.exception;
 
 public enum PeriodExceptionType {
-
-    ERROR,
+    AUTHORIZATION,
     VALIDATION,
+    ERROR,
     EXTERNAL_RESOURCE,
-    UNKKOWN
-
+    UNKNOWN
 }

@@ -1,16 +1,25 @@
 package cl.previred.recruiting.periods.core.exception;
 
-public class PeriodException extends RuntimeException {
+public class PeriodException extends Exception {
 
-    private PeriodExceptionType periodExceptionType;
-    private String message;
+    protected PeriodExceptionType periodExceptionType;
 
-    PeriodException() {
+    public PeriodException() {
         super();
         this.periodExceptionType = PeriodExceptionType.ERROR;
     }
 
-    PeriodException(String message) {
+    public PeriodException(Throwable e) {
+        super(e);
+        this.periodExceptionType = PeriodExceptionType.ERROR;
+    }
+
+    public PeriodException(PeriodExceptionType type, Throwable e) {
+        super(e);
+        this.periodExceptionType = type;
+    }
+
+    public PeriodException(String message) {
         super(message);
     }
 
